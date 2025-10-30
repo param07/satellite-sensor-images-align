@@ -1,0 +1,347 @@
+{
+  "d4986417-e96a-4c7e-9d95-406402074962": {
+    "jobId": "d4986417-e96a-4c7e-9d95-406402074962",
+    "status": "done",
+    "createdAt": "2025-10-29T14:56:27.861Z",
+    "imageAId": "2fc95312-1edc-45bd-8acc-5d32bb1915c5-eo_clipped_3857",
+    "imageBId": "170c5c53-1c26-47ec-9c14-c6de81cc76ac-sar_clipped_4326",
+    "aoi": {
+      "north": 28.636020557032285,
+      "south": 28.628581254576595,
+      "east": 77.22668582519562,
+      "west": 77.21530593600647
+    },
+    "progress": 100,
+    "error": null,
+    "outputs": {
+      "imageAUrl": "/api/outputs/d4986417-e96a-4c7e-9d95-406402074962/A_clipped.tif",
+      "imageBUrl": "/api/outputs/d4986417-e96a-4c7e-9d95-406402074962/B_clipped_aligned.tif",
+      "outDir": "/api/outputs/d4986417-e96a-4c7e-9d95-406402074962/"
+    },
+    "logs": [
+      {
+        "ts": "2025-10-29T14:56:28.848Z",
+        "type": "stdout",
+        "text": "[d4986417-e96a-4c7e-9d95-406402074962] Starting worker\r\nPROGRESS: 5\r\n[d4986417-e96a-4c7e-9d95-406402074962] Clipping image A\r\n"
+      },
+      {
+        "ts": "2025-10-29T14:56:28.955Z",
+        "type": "stdout",
+        "text": "PROGRESS: 25\r\n"
+      },
+      {
+        "ts": "2025-10-29T14:56:28.991Z",
+        "type": "stdout",
+        "text": "[d4986417-e96a-4c7e-9d95-406402074962] Clipping image B (aligned to A�s AOI)\r\n"
+      },
+      {
+        "ts": "2025-10-29T14:56:29.588Z",
+        "type": "stdout",
+        "text": "PROGRESS: 45\r\n[d4986417-e96a-4c7e-9d95-406402074962] Computing translation (phase_cross_correlation)\r\n"
+      },
+      {
+        "ts": "2025-10-29T14:56:32.802Z",
+        "type": "stdout",
+        "text": "[d4986417-e96a-4c7e-9d95-406402074962] Detected shift (y, x) = [ 195.1 -545.8]\r\nPROGRESS: 65\r\n"
+      },
+      {
+        "ts": "2025-10-29T14:56:33.160Z",
+        "type": "stdout",
+        "text": "PROGRESS: 90\r\nPROGRESS: 100\r\n[d4986417-e96a-4c7e-9d95-406402074962] Done � wrote F:\\SatelliteImages\\data\\outputs\\d4986417-e96a-4c7e-9d95-406402074962\\A_clipped.tif and F:\\SatelliteImages\\data\\outputs\\d4986417-e96a-4c7e-9d95-406402074962\\B_clipped_aligned.tif\r\n"
+      }
+    ],
+    "startedAt": "2025-10-29T14:56:27.887Z"
+  },
+  "a24c4b2c-7ae7-40eb-9a34-82db6be613a9": {
+    "jobId": "a24c4b2c-7ae7-40eb-9a34-82db6be613a9",
+    "status": "done",
+    "createdAt": "2025-10-29T14:58:17.927Z",
+    "imageAId": "2fc95312-1edc-45bd-8acc-5d32bb1915c5-eo_clipped_3857",
+    "imageBId": "170c5c53-1c26-47ec-9c14-c6de81cc76ac-sar_clipped_4326",
+    "aoi": {
+      "north": 28.61950270792233,
+      "south": 28.61151595149498,
+      "east": 77.21224304329407,
+      "west": 77.20597336849549
+    },
+    "progress": 100,
+    "error": null,
+    "outputs": {
+      "imageAUrl": "/api/outputs/a24c4b2c-7ae7-40eb-9a34-82db6be613a9/A_clipped.tif",
+      "imageBUrl": "/api/outputs/a24c4b2c-7ae7-40eb-9a34-82db6be613a9/B_clipped_aligned.tif",
+      "outDir": "/api/outputs/a24c4b2c-7ae7-40eb-9a34-82db6be613a9/"
+    },
+    "logs": [
+      {
+        "ts": "2025-10-29T14:58:18.955Z",
+        "type": "stdout",
+        "text": "PROGRESS: 5\r\n[a24c4b2c-7ae7-40eb-9a34-82db6be613a9] Clipping image A\r\n"
+      },
+      {
+        "ts": "2025-10-29T14:58:19.088Z",
+        "type": "stdout",
+        "text": "PROGRESS: 25\r\n"
+      },
+      {
+        "ts": "2025-10-29T14:58:19.109Z",
+        "type": "stdout",
+        "text": "[a24c4b2c-7ae7-40eb-9a34-82db6be613a9] Clipping image B (aligned to A�s AOI)\r\n"
+      },
+      {
+        "ts": "2025-10-29T14:58:19.574Z",
+        "type": "stdout",
+        "text": "PROGRESS: 45\r\n[a24c4b2c-7ae7-40eb-9a34-82db6be613a9] Computing translation (phase_cross_correlation)\r\n"
+      },
+      {
+        "ts": "2025-10-29T14:58:21.110Z",
+        "type": "stdout",
+        "text": "[a24c4b2c-7ae7-40eb-9a34-82db6be613a9] Detected shift (y, x) = [-1082.   1528.9]\r\nPROGRESS: 65\r\n"
+      },
+      {
+        "ts": "2025-10-29T14:58:21.343Z",
+        "type": "stdout",
+        "text": "PROGRESS: 90\r\nPROGRESS: 100\r\n[a24c4b2c-7ae7-40eb-9a34-82db6be613a9] Done � wrote F:\\SatelliteImages\\data\\outputs\\a24c4b2c-7ae7-40eb-9a34-82db6be613a9\\A_clipped.tif and F:\\SatelliteImages\\data\\outputs\\a24c4b2c-7ae7-40eb-9a34-82db6be613a9\\B_clipped_aligned.tif\r\n"
+      }
+    ],
+    "startedAt": "2025-10-29T14:58:17.954Z"
+  },
+  "a3b54832-4ecb-4d01-b00a-ee2ecf8371d4": {
+    "jobId": "a3b54832-4ecb-4d01-b00a-ee2ecf8371d4",
+    "status": "done",
+    "createdAt": "2025-10-29T15:00:24.056Z",
+    "imageAId": "79037abb-8206-4cbc-adff-0053f7452b47-eo_clipped_3857",
+    "imageBId": "3b2c860a-91a6-4e50-aced-0008bd0ff8c4-sar_clipped_4326",
+    "aoi": {
+      "north": 28.63767784878547,
+      "south": 28.63093552124918,
+      "east": 77.20295152584353,
+      "west": 77.19717569529281
+    },
+    "progress": 100,
+    "error": null,
+    "outputs": {
+      "imageAUrl": "/api/outputs/a3b54832-4ecb-4d01-b00a-ee2ecf8371d4/A_clipped.tif",
+      "imageBUrl": "/api/outputs/a3b54832-4ecb-4d01-b00a-ee2ecf8371d4/B_clipped_aligned.tif",
+      "outDir": "/api/outputs/a3b54832-4ecb-4d01-b00a-ee2ecf8371d4/"
+    },
+    "logs": [
+      {
+        "ts": "2025-10-29T15:00:25.016Z",
+        "type": "stdout",
+        "text": "[a3b54832-4ecb-4d01-b00a-ee2ecf8371d4] Starting worker\r\nPROGRESS: 5\r\n[a3b54832-4ecb-4d01-b00a-ee2ecf8371d4] Clipping image A\r\n"
+      },
+      {
+        "ts": "2025-10-29T15:00:25.099Z",
+        "type": "stdout",
+        "text": "PROGRESS: 25\r\n"
+      },
+      {
+        "ts": "2025-10-29T15:00:25.109Z",
+        "type": "stdout",
+        "text": "[a3b54832-4ecb-4d01-b00a-ee2ecf8371d4] Clipping image B (aligned to A�s AOI)\r\n"
+      },
+      {
+        "ts": "2025-10-29T15:00:25.542Z",
+        "type": "stdout",
+        "text": "PROGRESS: 45\r\n[a3b54832-4ecb-4d01-b00a-ee2ecf8371d4] Computing translation (phase_cross_correlation)\r\n"
+      },
+      {
+        "ts": "2025-10-29T15:00:27.143Z",
+        "type": "stdout",
+        "text": "[a3b54832-4ecb-4d01-b00a-ee2ecf8371d4] Detected shift (y, x) = [1466.  -678.8]\r\nPROGRESS: 65\r\n"
+      },
+      {
+        "ts": "2025-10-29T15:00:27.326Z",
+        "type": "stdout",
+        "text": "PROGRESS: 90\r\nPROGRESS: 100\r\n[a3b54832-4ecb-4d01-b00a-ee2ecf8371d4] Done � wrote F:\\SatelliteImages\\data\\outputs\\a3b54832-4ecb-4d01-b00a-ee2ecf8371d4\\A_clipped.tif and F:\\SatelliteImages\\data\\outputs\\a3b54832-4ecb-4d01-b00a-ee2ecf8371d4\\B_clipped_aligned.tif\r\n"
+      }
+    ],
+    "startedAt": "2025-10-29T15:00:24.080Z"
+  },
+  "acf18f87-4c50-4552-8bf7-dde016c613bc": {
+    "jobId": "acf18f87-4c50-4552-8bf7-dde016c613bc",
+    "status": "done",
+    "createdAt": "2025-10-29T15:02:35.172Z",
+    "imageAId": "79037abb-8206-4cbc-adff-0053f7452b47-eo_clipped_3857",
+    "imageBId": "3b2c860a-91a6-4e50-aced-0008bd0ff8c4-sar_clipped_4326",
+    "aoi": {
+      "north": 28.627244007591212,
+      "south": 28.62197019144502,
+      "east": 77.20711385827639,
+      "west": 77.20172451452831
+    },
+    "progress": 100,
+    "error": null,
+    "outputs": {
+      "imageAUrl": "/api/outputs/acf18f87-4c50-4552-8bf7-dde016c613bc/A_clipped.tif",
+      "imageBUrl": "/api/outputs/acf18f87-4c50-4552-8bf7-dde016c613bc/B_clipped_aligned.tif",
+      "outDir": "/api/outputs/acf18f87-4c50-4552-8bf7-dde016c613bc/"
+    },
+    "logs": [
+      {
+        "ts": "2025-10-29T15:02:36.217Z",
+        "type": "stdout",
+        "text": "[acf18f87-4c50-4552-8bf7-dde016c613bc] Starting worker\r\nPROGRESS: 5\r\n[acf18f87-4c50-4552-8bf7-dde016c613bc] Clipping image A\r\n"
+      },
+      {
+        "ts": "2025-10-29T15:02:36.279Z",
+        "type": "stdout",
+        "text": "PROGRESS: 25\r\n"
+      },
+      {
+        "ts": "2025-10-29T15:02:36.286Z",
+        "type": "stdout",
+        "text": "[acf18f87-4c50-4552-8bf7-dde016c613bc] Clipping image B (aligned to A�s AOI)\r\n"
+      },
+      {
+        "ts": "2025-10-29T15:02:36.550Z",
+        "type": "stdout",
+        "text": "[acf18f87-4c50-4552-8bf7-dde016c613bc] Computing translation (phase_cross_correlation)\r\n"
+      },
+      {
+        "ts": "2025-10-29T15:02:37.466Z",
+        "type": "stdout",
+        "text": "[acf18f87-4c50-4552-8bf7-dde016c613bc] Detected shift (y, x) = [ 1162.9 -1247. ]\r\nPROGRESS: 65\r\n"
+      },
+      {
+        "ts": "2025-10-29T15:02:37.599Z",
+        "type": "stdout",
+        "text": "PROGRESS: 90\r\nPROGRESS: 100\r\n[acf18f87-4c50-4552-8bf7-dde016c613bc] Done � wrote F:\\SatelliteImages\\data\\outputs\\acf18f87-4c50-4552-8bf7-dde016c613bc\\A_clipped.tif and F:\\SatelliteImages\\data\\outputs\\acf18f87-4c50-4552-8bf7-dde016c613bc\\B_clipped_aligned.tif\r\n"
+      }
+    ],
+    "startedAt": "2025-10-29T15:02:35.199Z"
+  },
+  "fcf07e33-2dce-4ff9-8b0f-0851618311a3": {
+    "jobId": "fcf07e33-2dce-4ff9-8b0f-0851618311a3",
+    "status": "done",
+    "createdAt": "2025-10-29T18:00:36.769Z",
+    "imageAId": "3776f664-064e-4fe6-ad3e-e4894250f8eb-eo_clipped_3857",
+    "imageBId": "1c50fd45-a4a0-4d15-a457-0a0eeb462205-sar_clipped_4326",
+    "aoi": {
+      "north": 28.634419739008997,
+      "south": 28.62741351871534,
+      "east": 77.21997088642942,
+      "west": 77.20771066618978
+    },
+    "progress": 100,
+    "error": null,
+    "outputs": {
+      "imageAUrl": "/api/outputs/fcf07e33-2dce-4ff9-8b0f-0851618311a3/A_clipped.tif",
+      "imageBUrl": "/api/outputs/fcf07e33-2dce-4ff9-8b0f-0851618311a3/B_clipped_aligned.tif",
+      "outDir": "/api/outputs/fcf07e33-2dce-4ff9-8b0f-0851618311a3/"
+    },
+    "logs": [
+      {
+        "ts": "2025-10-29T18:00:37.354Z",
+        "type": "stdout",
+        "text": "[fcf07e33-2dce-4ff9-8b0f-0851618311a3] Starting worker\r\nPROGRESS: 5\r\n[fcf07e33-2dce-4ff9-8b0f-0851618311a3] Clipping image A\r\n"
+      },
+      {
+        "ts": "2025-10-29T18:00:37.409Z",
+        "type": "stdout",
+        "text": "PROGRESS: 25\r\n"
+      },
+      {
+        "ts": "2025-10-29T18:00:37.414Z",
+        "type": "stdout",
+        "text": "[fcf07e33-2dce-4ff9-8b0f-0851618311a3] Clipping image B (aligned to A�s AOI)\r\n"
+      },
+      {
+        "ts": "2025-10-29T18:00:37.834Z",
+        "type": "stdout",
+        "text": "PROGRESS: 45\r\n[fcf07e33-2dce-4ff9-8b0f-0851618311a3] Computing translation (phase_cross_correlation)\r\n"
+      },
+      {
+        "ts": "2025-10-29T18:00:39.751Z",
+        "type": "stdout",
+        "text": "[fcf07e33-2dce-4ff9-8b0f-0851618311a3] Detected shift (y, x) = [ 733.1 2293.1]\r\nPROGRESS: 65\r\n"
+      },
+      {
+        "ts": "2025-10-29T18:00:40.035Z",
+        "type": "stdout",
+        "text": "PROGRESS: 90\r\nPROGRESS: 100\r\n[fcf07e33-2dce-4ff9-8b0f-0851618311a3] Done � wrote F:\\SatelliteImages\\data\\outputs\\fcf07e33-2dce-4ff9-8b0f-0851618311a3\\A_clipped.tif and F:\\SatelliteImages\\data\\outputs\\fcf07e33-2dce-4ff9-8b0f-0851618311a3\\B_clipped_aligned.tif\r\n"
+      }
+    ],
+    "startedAt": "2025-10-29T18:00:36.786Z"
+  },
+  "aa23b146-86cf-4c87-af7a-fe92b141a3cb": {
+    "jobId": "aa23b146-86cf-4c87-af7a-fe92b141a3cb",
+    "status": "queued",
+    "createdAt": "2025-10-30T02:26:20.104Z",
+    "imageAId": "e1e7afdf-556b-40b6-a420-830d18abd54b-eo_clipped_3857",
+    "imageBId": "8a40bc29-829d-451c-9801-beb01059abff-sar_clipped_4326",
+    "aoi": {
+      "north": 28.62771487114901,
+      "south": 28.623307505611606,
+      "east": 77.21072026705326,
+      "west": 77.20305494546736
+    },
+    "progress": 0,
+    "error": null,
+    "outputs": null,
+    "logs": []
+  },
+  "b2c162b8-28ae-4e33-9c47-a4bea577e1bf": {
+    "jobId": "b2c162b8-28ae-4e33-9c47-a4bea577e1bf",
+    "status": "done",
+    "createdAt": "2025-10-30T05:34:12.098Z",
+    "imageAId": "1a5fba2a-a7e6-4cba-a425-5f28d9366ef9-eo_clipped_3857",
+    "imageBId": "2fb385f4-a30c-4886-8a0e-58136a01f3d3-sar_clipped_4326",
+    "aoi": {
+      "north": 28.62884493506993,
+      "south": 28.6229684698291,
+      "east": 77.21056991136238,
+      "west": 77.20238927403959
+    },
+    "progress": 100,
+    "error": null,
+    "outputs": {
+      "imageAUrl": "/api/outputs/b2c162b8-28ae-4e33-9c47-a4bea577e1bf/A_clipped.tif",
+      "imageBUrl": "/api/outputs/b2c162b8-28ae-4e33-9c47-a4bea577e1bf/B_clipped_aligned.tif"
+    },
+    "logs": [],
+    "startedAt": "2025-10-30T05:34:12.104Z"
+  },
+  "13bc5ba8-e608-42e3-bde8-7cb9080d6d3d": {
+    "jobId": "13bc5ba8-e608-42e3-bde8-7cb9080d6d3d",
+    "status": "done",
+    "createdAt": "2025-10-30T05:35:41.067Z",
+    "imageAId": "1a5fba2a-a7e6-4cba-a425-5f28d9366ef9-eo_clipped_3857",
+    "imageBId": "2fb385f4-a30c-4886-8a0e-58136a01f3d3-sar_clipped_4326",
+    "aoi": {
+      "north": 28.62940996246791,
+      "south": 28.625115677960444,
+      "east": 77.21810073907808,
+      "west": 77.21232490852736
+    },
+    "progress": 100,
+    "error": null,
+    "outputs": {
+      "imageAUrl": "/api/outputs/13bc5ba8-e608-42e3-bde8-7cb9080d6d3d/A_clipped.tif",
+      "imageBUrl": "/api/outputs/13bc5ba8-e608-42e3-bde8-7cb9080d6d3d/B_clipped_aligned.tif"
+    },
+    "logs": [],
+    "startedAt": "2025-10-30T05:35:41.071Z"
+  },
+  "3c01594d-1844-4a34-801e-5eead4bf4884": {
+    "jobId": "3c01594d-1844-4a34-801e-5eead4bf4884",
+    "status": "done",
+    "createdAt": "2025-10-30T05:36:49.023Z",
+    "imageAId": "1a5fba2a-a7e6-4cba-a425-5f28d9366ef9-eo_clipped_3857",
+    "imageBId": "2fb385f4-a30c-4886-8a0e-58136a01f3d3-sar_clipped_4326",
+    "aoi": {
+      "north": 28.61950270792233,
+      "south": 28.61151595149498,
+      "east": 77.21290886670793,
+      "west": 77.2061882906396
+    },
+    "progress": 100,
+    "error": null,
+    "outputs": {
+      "imageAUrl": "/api/outputs/3c01594d-1844-4a34-801e-5eead4bf4884/A_clipped.tif",
+      "imageBUrl": "/api/outputs/3c01594d-1844-4a34-801e-5eead4bf4884/B_clipped_aligned.tif"
+    },
+    "logs": [],
+    "startedAt": "2025-10-30T05:36:49.025Z"
+  }
+}

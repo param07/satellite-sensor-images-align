@@ -1,0 +1,28 @@
+services:
+  web:
+    build: ./web
+    ports:
+      - "5173:80"
+    depends_on:
+      - api
+    environment:
+      - NODE_ENV=production
+
+  api:
+    build: ./api
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data
+    environment:
+      - WORKER_URL=http://worker:5000
+      - DOCKER_ENV=true
+    depends_on:
+      - worker
+
+  worker:
+    build: ./worker
+    volumes:
+      - ./data:/data
+    expose:
+      - "5000"
