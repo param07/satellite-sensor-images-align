@@ -3,6 +3,8 @@
 * EO - Earth Observation - Refers to satellite or aerial imaging systems that capture optical multispectral, or hyperspectral imagery of the Earth’s surface
 * SAR - Synthetic Aperture Radar - Refers to radar-based remote sensing satellites that use microwave signals to image the Earth
 * AOI - Area of Interest - In Earth Observation (EO) or Synthetic Aperture Radar (SAR) workflows, AOI refers to the specific geographic region you want to analyze or visualize — a subset of a larger satellite image.
+* GeoTIFF - GeoTIFF is a public domain metadata standard which allows georeferencing information to be embedded within a TIFF file. The includes everything necessary to establish the exact spatial reference for the file.
+* TIFF - Tag Image File Format or Tagged Image File Format, commonly known by the abbreviations TIFF or TIF, is an image file format for storing raster graphics images.
 
 ## Overview
 This project implements a full-stack geospatial processing web application that allows users to:
@@ -32,6 +34,9 @@ Once all the 3 services are up
 4. Draw an AOI rectangle on the left map.
 5. Click Process AOI to trigger the backend job.
 6. When the job completes, select "Show processed outputs" to view the aligned results. Unselect "Show processed outputs" to view the original rendered split-view images
+
+## Demo Video Link
+* https://drive.google.com/file/d/1wx0e6MyALDTpGuA3DeJK2KSD2KMZHtN2/view?usp=drive_link
 
 ## Tech Stack
 1. Frontend: React, Leaflet, georaster-layer-for-leaflet
