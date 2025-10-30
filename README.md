@@ -1,31 +1,28 @@
 # Full-Stack Application — EO/SAR images Split-View Map with AOI Clip & Align
 
-EO - Earth Observation - Refers to satellite or aerial imaging systems that capture optical, multispectral, or hyperspectral imagery of the Earth’s surface
-SAR - Synthetic Aperture Radar - Refers to radar-based remote sensing satellites that use microwave signals to image the Earth
-AOI - Area of Interest - In Earth Observation (EO) or Synthetic Aperture Radar (SAR) workflows, AOI refers to the specific geographic region you want to analyze or visualize — a subset of a larger satellite image.
+* EO - Earth Observation - Refers to satellite or aerial imaging systems that capture optical multispectral, or hyperspectral imagery of the Earth’s surface
+* SAR - Synthetic Aperture Radar - Refers to radar-based remote sensing satellites that use microwave signals to image the Earth
+* AOI - Area of Interest - In Earth Observation (EO) or Synthetic Aperture Radar (SAR) workflows, AOI refers to the specific geographic region you want to analyze or visualize — a subset of a larger satellite image.
 
 ## Overview
 This project implements a full-stack geospatial processing web application that allows users to:
-1. Upload two GeoTIFF images (EO/SAR data).
-2. Preview them in a split-view synchronized map.
-3. Draw an Area of Interest (AOI).
-4. Trigger a backend processing job that:
--- Clips both images to the AOI.
--- Aligns (registers) Image B to Image A using phase cross-correlation.
-5. View the processed (clipped + aligned) outputs in the same split view.
+* Upload two GeoTIFF images (EO/SAR data).
+* Preview them in a split-view synchronized map.
+* Draw an Area of Interest (AOI).
+* Trigger a backend processing job that:
+  * Clips both images to the AOI.
+  * Aligns (registers) Image B to Image A using phase cross-correlation.
+* View the processed (clipped + aligned) outputs in the same split view.
 
 ## Setup Instructions
-git clone https://github.com/param07/satellite-sensor-images-align
-cd satellite-sensor-images-align
-docker compose up --build
-
-This will:
-Build and run all three services: web, api, and worker.
-
-Expose:
-Web UI → http://localhost:5173
-Node.js API → http://localhost:8080
-Python Worker → http://localhost:5000
+* git clone https://github.com/param07/satellite-sensor-images-align
+* cd satellite-sensor-images-align
+* docker compose up --build
+* This will build and run all three services: web, api, and worker.
+* Expose:
+  * Web UI → http://localhost:5173
+  * Node.js API → http://localhost:8080
+  * Python Worker → http://localhost:5000
 
 ## Run Instructions
 Once all the 3 services are up
@@ -45,39 +42,38 @@ Once all the 3 services are up
 
 ## API Endpoints
 
-### Upload GeoTIFF: POST /api/upload
-Request = file=@example_A.tif
+1. Upload GeoTIFF: POST /api/upload
+  * Request = file=@example_A.tif
+  * Response = {
+      "imageId": "8d43d7f4-0a32-456d-bdcd-efb2b1a2c9c0",
+      "filename": "example_A.tif",
+      "size": 204800
+    }
 
-Response = {
-  "imageId": "8d43d7f4-0a32-456d-bdcd-efb2b1a2c9c0",
-  "filename": "example_A.tif",
-  "size": 204800
-}
+2. Create a Processing Job: POST /api/jobs
+  * Request = {
+      "imageAId": "8d43d7f4-0a32-456d-bdcd-efb2b1a2c9c0",
+      "imageBId": "b7f3e25d-0c12-47ac-a24b-81de3ebd9077",
+      "aoi": {
+        "north": 12.45,
+        "south": 12.15,
+        "east": 77.65,
+        "west": 77.25
+      }
+    }
 
-### Create a Processing Job: POST /api/jobs
-Request = {
-  "imageAId": "8d43d7f4-0a32-456d-bdcd-efb2b1a2c9c0",
-  "imageBId": "b7f3e25d-0c12-47ac-a24b-81de3ebd9077",
-  "aoi": {
-    "north": 12.45,
-    "south": 12.15,
-    "east": 77.65,
-    "west": 77.25
-  }
-}
+  * Response = { "jobId": "f14a4a65-98da-48cf-ae12-3b2132b61cd5" }
 
-Response = { "jobId": "f14a4a65-98da-48cf-ae12-3b2132b61cd5" }
-
-### Check Job Status: GET /api/jobs/:jobId
-Response = {
-  "jobId": "f14a4a65-98da-48cf-ae12-3b2132b61cd5",
-  "status": "done",
-  "progress": 100,
-  "outputs": {
-    "imageAUrl": "/api/outputs/f14a4a65-98da-48cf-ae12-3b2132b61cd5/A_clipped.tif",
-    "imageBUrl": "/api/outputs/f14a4a65-98da-48cf-ae12-3b2132b61cd5/B_clipped_aligned.tif"
-  }
-}
+3. Check Job Status: GET /api/jobs/:jobId
+  * Response = {
+      "jobId": "f14a4a65-98da-48cf-ae12-3b2132b61cd5",
+      "status": "done",
+      "progress": 100,
+      "outputs": {
+        "imageAUrl": "/api/outputs/f14a4a65-98da-48cf-ae12-3b2132b61cd5/A_clipped.tif",
+        "imageBUrl": "/api/outputs/f14a4a65-98da-48cf-ae12-3b2132b61cd5/B_clipped_aligned.tif"
+      }
+    }
 
 
 ## Application Features
@@ -89,6 +85,8 @@ Response = {
 ## Application Improvements
 1. We could use jobs and metadata are stored in JSON files.
 2. We could use feature-based methods (e.g., SIFT + RANSAC, optical flow, or mutual information registration) that are more robust for complex transformations—though at the cost of higher computation time and heavier dependencies.
+3. The redering of images could be fastened.
+4. UI enhancements possible.
 
 ## Phase Cross-Correlation
 ### Features, trade-offs and limitations
