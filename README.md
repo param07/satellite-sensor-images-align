@@ -37,16 +37,17 @@ Once all the 3 services are up
 6. When the job completes, select "Show processed outputs" to view the aligned results. Unselect "Show processed outputs" to view the original rendered split-view images
 
 ## Tech Stack
-Frontend    React, Leaflet, georaster-layer-for-leaflet
-Backend API Node.js + Express
-Worker Service  Python (Flask)
-Raster Processing   GDAL, rasterio, scikit-image, numpy
-Containerization    Docker, Docker Compose
+1. Frontend: React, Leaflet, georaster-layer-for-leaflet
+2. Backend API: Node.js + Express
+3. Worker Service: Python (Flask)
+4. Raster Processing: GDAL, rasterio, scikit-image, numpy
+5. Containerization: Docker, Docker Compose
 
 ## API Endpoints
 
 ### Upload GeoTIFF: POST /api/upload
 Request = file=@example_A.tif
+
 Response = {
   "imageId": "8d43d7f4-0a32-456d-bdcd-efb2b1a2c9c0",
   "filename": "example_A.tif",
